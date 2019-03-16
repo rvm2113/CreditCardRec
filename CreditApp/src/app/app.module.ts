@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainInformationComponent } from './main-information/main-information.component';
 import { CreditCardTypeComponent } from './credit-card-type/credit-card-type.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule} from '@angular/material';
 
 
 
@@ -13,13 +14,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     MainInformationComponent,
-    CreditCardTypeComponent
+    CreditCardTypeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+     MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule
+
   ],
+  exports: [
+     MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule
+	],
   providers: [],
   bootstrap: [AppComponent]
 })

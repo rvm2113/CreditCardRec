@@ -1,3 +1,43 @@
 <p>
   main-information works!
 </p>
+
+
+ <mat-form-field class="example-full-width">
+    <input matInput placeholder="Full Name" value="Jane Doe">
+  </mat-form-field>
+
+
+<mat-form-field class="container bracket-inputs">
+      <input matInput
+        type="number"
+        placeholder="Age"
+       > 
+</mat-form-field>
+
+<mat-checkbox class = "container bracket-inputs">Have Credit Cards?</mat-checkbox>
+
+<mat-form-field class = "bracket-inputs container">
+  <mat-select  placeholder="Purchasing" (selectionChange) = "changePurchase($event.value)" >
+    <mat-option *ngFor="let p of purchases" [value]="p.type">
+      {{p.type}}
+    </mat-option> 
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field class = "bracket-inputs container">
+  <mat-select  placeholder="Purchasing" (selectionChange) = "changePurchase($event.value)" >
+    <mat-option *ngFor="let p of purchases" [value]="p.type">
+      {{p.type}}
+    </mat-option> 
+  </mat-select>
+</mat-form-field>
+
+
+<mat-form-field class = "bracket-inputs container">
+  <mat-select  placeholder="Purchasing" (selectionChange) = "changePurchase($event.value)" >
+    <mat-option *ngFor="let p of purchases" [value]="p.type">
+      {{p.type}}
+    </mat-option> 
+  </mat-select>
+</mat-form-field>
