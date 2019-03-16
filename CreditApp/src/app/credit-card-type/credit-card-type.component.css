@@ -1,0 +1,14 @@
+#creditType{
+	
+    background-color: antiquewhite;
+    width:100%;
+}
+.list-group-item {
+    display: list-item;
+    background-color: antiquewhite;
+    border:none;
+}
+
+ol{
+	padding-left: 6%;
+}

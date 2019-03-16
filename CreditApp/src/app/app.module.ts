@@ -27,6 +27,6 @@ import {MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatChe
      MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule
 	],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, CreditCardTypeComponent]
 })
 export class AppModule { }
