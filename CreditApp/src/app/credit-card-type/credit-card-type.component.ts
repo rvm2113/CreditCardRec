@@ -20,7 +20,7 @@ export class CreditCardTypeComponent extends AppComponent implements OnInit {
   rateControl = null;
   rateControlSecond = null;
 
-
+purchaseval = "";
 	
   CreditCards:CreditCards[] = [
    {type: 'Chase'},
@@ -37,6 +37,10 @@ export class CreditCardTypeComponent extends AppComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  changePurchase(value){
+  	this.purchaseval = value;
+  }	
 
 
    onChange(){
