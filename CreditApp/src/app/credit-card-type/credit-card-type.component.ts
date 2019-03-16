@@ -18,7 +18,7 @@ export interface CreditCards{
 export class CreditCardTypeComponent extends AppComponent implements OnInit {
   public changeworthy: boolean = false;
   rateControl = null;
-  
+  rateControlSecond = null;
 
 
 	
@@ -30,7 +30,8 @@ export class CreditCardTypeComponent extends AppComponent implements OnInit {
   ];
   constructor() { 
   	super();
-  	this.rateControl = new FormControl("", [Validators.max(100), Validators.min(0)])
+  	this.rateControl = new FormControl("", [Validators.max(100), Validators.min(0)]);
+  	this.rateControlSecond = new FormControl("", [Validators.max(100), Validators.min(0)]);
   }
 
   ngOnInit() {
