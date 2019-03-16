@@ -1,24 +1,45 @@
 import { Component, OnInit } from '@angular/core';
+
 import {AppComponent} from '../app.component';
+
+import { FormBuilder, FormGroup, Validators , FormControl} from '@angular/forms';
+
+export interface CreditCards{
+	type: string
+}
+
 
 @Component({
   selector: 'credit-card-type',
   templateUrl: './credit-card-type.component.html',
   styleUrls: ['./credit-card-type.component.css']
 })
+
 export class CreditCardTypeComponent extends AppComponent implements OnInit {
   public changeworthy: boolean = false;
+  rateControl = null;
+  
 
+
+	
+  CreditCards:CreditCards[] = [
+   {type: 'Chase'},
+    {type: 'Discovery'},
+    {type: 'Mastercard'},
+    {type: 'Visa'}
+  ];
   constructor() { 
-     super();
-
+  	super();
+  	this.rateControl = new FormControl("", [Validators.max(100), Validators.min(0)])
   }
 
   ngOnInit() {
   }
 
 
+
    onChange(){
   	this.changeworthy = !this.changeworthy;
   }
+
 }
