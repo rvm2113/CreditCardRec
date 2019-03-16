@@ -8,6 +8,9 @@ import { CreditCardTypeComponent } from './credit-card-type/credit-card-type.com
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule} from '@angular/material';
 
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -19,12 +22,19 @@ import {MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatChe
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
      MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule
 
   ],
   exports: [
-     MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule
+     MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule,
+     FormsModule,
+    ReactiveFormsModule,
+
 	],
   providers: [],
   bootstrap: [AppComponent, CreditCardTypeComponent]

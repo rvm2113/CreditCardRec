@@ -20,5 +20,16 @@ import { map } from 'rxjs/operators';
   `
 })
 export class AppComponent {
-  title = 'CreditApp';
+  public title;
+  public isViewable:boolean = false;
+ constructor(){
+  this.title = 'CreditApp';
+   this.isViewable = false;
+ }
+
+ setViewable(){
+ 	this.isViewable = !this.isViewable;
+ 	console.log(this.isViewable);
+ }
+ 
 }

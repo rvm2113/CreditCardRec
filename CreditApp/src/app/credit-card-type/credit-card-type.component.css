@@ -1,14 +1,58 @@
 #creditType{
 	
-    background-color: antiquewhite;
+    
     width:100%;
 }
 .list-group-item {
     display: list-item;
-    background-color: antiquewhite;
+    
     border:none;
 }
+.question{
+	margin-top: 10px;
+}
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom:20px;
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+.bracket-inputs {
+  min-width: 215px;
+  width: 50%;
+  max-width: 1500px;
+}
+#hasCard{
+	
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-family: Roboto,"Helvetica Neue",sans-serif;
+	margin-left: 25%;
+	margin-right: 25%;
 
+}
 ol{
 	padding-left: 6%;
+}
+@media only screen and (max-width: 580px) {
+	#hasCard{
+	
+		height: 80%;
+		width: 80%;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		font-family: Roboto,"Helvetica Neue",sans-serif;
+		margin-left: 10%;
+		
+	}
 }
