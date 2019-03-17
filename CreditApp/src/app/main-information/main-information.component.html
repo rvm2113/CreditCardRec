@@ -55,6 +55,53 @@
     </mat-option> 
   </mat-select>
 </mat-form-field>
+<mat-checkbox class = "container bracket-inputs" (change) = "onChange()" >Have Credit Cards?</mat-checkbox>
+
+<div class="col-sm-12"  *ngIf="changeworthy==true" id = "hasCard">
+
+  <div class ="card"> 
+    <p>
+      Type of credit card you are using:
+    </p>
+
+    <mat-form-field class = "bracket-inputs container">
+      <mat-select  placeholder="Credit Card" (selectionChange) = "changePurchase4($event.value)" >
+        <mat-option *ngFor="let c of CreditCards" [value]="c.type">
+          {{c.type}}
+        </mat-option> 
+      </mat-select>
+    </mat-form-field>
+    
+    <p class="question"> How many cards do you have?</p>
+    <mat-form-field class="container bracket-inputs" (selectionChange) = "changePurchase5($event.value)">
+          <input matInput
+            type="number"
+            placeholder="# of Credit Cards"
+            min = "0"
+            max = "8"
+            [formControl]="rateControl"
+           > 
+           <mat-error > Please Enter a value between 0 and 8</mat-error>
+    </mat-form-field>
+    <p class="question"> How many purchases do you make with your credit card in a week?</p>
+    <mat-form-field class="container bracket-inputs"(selectionChange) = "changePurchase6($event.value)">
+          <input matInput
+            type="number"
+            placeholder="# of Purchases"
+            min = "0"
+            max = "1000"
+            [formControl]="rateControlSecond"
+            
+           > 
+           <mat-error > Please Enter a value between 0 and 1000</mat-error>
+    </mat-form-field>
+    
+  </div>
+
+</div>
+<div id="btn">
+  <button mat-raised-button color ="accent" (click)="open()">Submit</button>
+</div>
 
 
 
