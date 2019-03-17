@@ -16,7 +16,7 @@ import { RecComponent } from './rec/rec.component';
 import { AppRoutingModule }     from './app-routing.module';
 import { SurveyComponent } from './survey/survey.component';
 import { TransactionComponent } from './transaction/transaction.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -39,13 +39,14 @@ import { TransactionComponent } from './transaction/transaction.component';
     FormsModule,
     ReactiveFormsModule,
      MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule,
-    
+    HttpClientModule
 
   ],
   exports: [
      MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule,
      FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
 
 	],
   providers: [],
