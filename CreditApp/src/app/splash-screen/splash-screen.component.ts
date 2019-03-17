@@ -16,4 +16,9 @@ export class SplashScreenComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  open(){
+this.router.navigate(['./survey']);
+
+  }
 }
