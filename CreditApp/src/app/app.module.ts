@@ -11,7 +11,6 @@ import {MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatChe
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { RouterModule, Routes } from '@angular/router';
-import { SplashComponentComponent } from './splash-component/splash-component.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { RecComponent } from './rec/rec.component';
 
@@ -27,7 +26,6 @@ const appRoutes: Routes = [
     AppComponent,
     MainInformationComponent,
     CreditCardTypeComponent,
-    SplashComponentComponent,
     SplashScreenComponent,
     RecComponent,
   ],
