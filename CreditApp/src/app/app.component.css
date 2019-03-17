@@ -1,0 +1,16 @@
+#wrapper{
+	border-radius:5px; 
+	padding: 10px 10px 10px 10px;
+	width:50%;
+	height: 50%;
+	background-color: antiquewhite;
+	display: flex;
+	margin-left: 25%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}

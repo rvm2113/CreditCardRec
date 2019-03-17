@@ -33,11 +33,16 @@
 		        type="number"
 		        placeholder="# of Purchases"
 		        min = "0"
+		        min = "1000"
 		        [formControl]="rateControlSecond"
 		        
 		       > 
-		       <mat-error > Please Enter a value between 0 and 8</mat-error>
+		       <mat-error > Please Enter a value between 0 and 1000</mat-error>
 		</mat-form-field>
 		
 	</div>
+
+</div>
+<div id="btn">
+	<button mat-raised-button color ="accent">Submit</button>
 </div>

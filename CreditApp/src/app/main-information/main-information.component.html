@@ -1,7 +1,3 @@
-<p>
-  main-information works!
-</p>
-
 
  <mat-form-field class="example-full-width">
     <input matInput placeholder="Full Name" value="Jane Doe">
@@ -19,9 +15,12 @@
 
        <mat-error>Please enter a value between 1 and 120</mat-error>
 </mat-form-field>
-
-
+<mat-checkbox class = "container bracket-inputs">Are you a student?</mat-checkbox>
+<p id = "label">
+    Where do you spend most of your money?
+</p>
 <mat-form-field class = "bracket-inputs container">
+
   <mat-select  placeholder="Purchasing" (selectionChange) = "changePurchase($event.value)" >
     <mat-option *ngFor="let p of purchases" [value]="p.type">
       {{p.type}}
@@ -45,6 +44,18 @@
     </mat-option> 
   </mat-select>
 </mat-form-field>
+
+<p id = "label">
+    Income Bracket:
+</p>
+<mat-form-field class = "bracket-inputs container">
+  <mat-select  placeholder="Income" (selectionChange) = "changeIncome($event.value)" >
+    <mat-option *ngFor="let i of incomes" [value]="i.type">
+      {{i.type}}
+    </mat-option> 
+  </mat-select>
+</mat-form-field>
+
 
 
 

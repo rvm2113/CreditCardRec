@@ -24,14 +24,14 @@ purchaseval = "";
 	
   CreditCards:CreditCards[] = [
    {type: 'Chase'},
-    {type: 'Discovery'},
+    {type: 'Discover'},
     {type: 'Mastercard'},
     {type: 'Visa'}
   ];
   constructor() { 
   	super();
-  	this.rateControl = new FormControl("", [Validators.max(100), Validators.min(0)]);
-  	this.rateControlSecond = new FormControl("", [Validators.max(100), Validators.min(0)]);
+  	this.rateControl = new FormControl("", [Validators.max(8), Validators.min(0)]);
+  	this.rateControlSecond = new FormControl("", [Validators.max(1000), Validators.min(0)]);
   }
 
   ngOnInit() {
