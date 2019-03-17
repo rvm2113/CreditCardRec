@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MainInformationComponent } from './main-information/main-information.component';
-import { CreditCardTypeComponent } from './credit-card-type/credit-card-type.component';
+// import { CreditCardTypeComponent } from './credit-card-type/credit-card-type.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule} from '@angular/material';
 
@@ -22,7 +22,7 @@ import { SurveyComponent } from './survey/survey.component';
   declarations: [
     AppComponent,
     MainInformationComponent,
-    CreditCardTypeComponent,
+    // CreditCardTypeComponent,
     SplashScreenComponent,
     RecComponent,
     SurveyComponent
@@ -47,6 +47,6 @@ import { SurveyComponent } from './survey/survey.component';
 
 	],
   providers: [],
-  bootstrap: [AppComponent, CreditCardTypeComponent]
+  bootstrap: [AppComponent, MainInformationComponent]
 })
 export class AppModule { }

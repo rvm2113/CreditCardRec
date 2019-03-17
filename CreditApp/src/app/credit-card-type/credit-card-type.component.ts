@@ -21,9 +21,11 @@
 //   rateControlSecond = null;
 
 // purchaseval = "";
+
 // creditnumval = "";
 // creditval = "";
 // purchasenumval = "";
+
 	
 //   CreditCards:CreditCards[] = [
 //    {type: 'Chase'},
