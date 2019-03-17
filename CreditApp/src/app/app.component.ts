@@ -12,9 +12,11 @@ import { map } from 'rxjs/operators';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   template: `
+ 
+  <div id="wrapper">
   	<main-information> </main-information>
   	<credit-card-type> </credit-card-type>
-
+  </div>
 
 
   `

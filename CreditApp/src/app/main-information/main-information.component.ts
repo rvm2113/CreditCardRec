@@ -20,17 +20,27 @@ export class MainInformationComponent extends AppComponent implements OnInit  {
  rateControl = null;
   
 purchases:Purchase[] = [
-   {type: 'Shopping'},
-    {type: 'Travel'},
-    {type: 'Business'}
+    {type: 'Business'},
+    {type: 'Driving'},
+    {type: 'Shopping'},
+    {type: 'Travel'}
+  ];
+incomes:Income[] = [
+    {type: 'below $40,000'},
+    {type: 'between $40,000 - $60,000'},
+    {type: 'between $60,000 - $80,000'},
+    {type: 'between $80,000 - $100,000'},
+    {type: 'over $150,000'}
   ];
 
 
 	purchaseval = "";
+  incomeval = "";
   constructor() { 
   	super();
   	this.rateControl = new FormControl("", [Validators.max(120), Validators.min(0)]);
   }
+
 
   ngOnInit() {
   }
@@ -44,6 +54,11 @@ purchases:Purchase[] = [
 
  	this.purchaseval = value;
  	console.log("EXPORT VAL: " + this.purchaseval);
+ }
+ changeIncome(value) {
+
+   this.incomeval = value;
+   console.log("EXPORT VAL: " + this.incomeval);
  }
 
 
