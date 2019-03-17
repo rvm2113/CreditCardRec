@@ -53,10 +53,12 @@ incomes:Income[] = [
   ageval = ""
 	purchaseval1 = "";
   purchaseval2 = "";
-  purchase3 = "";
+  purchaseval3 = "";
   incomeval = "";
   creditval = "";
+  creditnumval = "";
   purchasenumval = "";
+  changeworthy = false;
   constructor() { 
   	super();
   	this.rateControl = new FormControl("", [Validators.max(120), Validators.min(0)]);
@@ -68,44 +70,34 @@ incomes:Income[] = [
   }
 
 
-  onChange(){
-  	console.log("Hello...");
-  	super.setViewable(); 
-  }
+
   changePurchase(value) {
 
  	this.ageval = value;
- 	console.log("EXPORT VAL: " + this.purchaseval);
  }
  changePurchase1(value) {
 
    this.purchaseval1 = value;
-   console.log("EXPORT VAL: " + this.purchaseval);
  }
  changePurchase2(value) {
 
    this.purchaseval2 = value;
-   console.log("EXPORT VAL: " + this.purchaseval);
  }
  changePurchase3(value) {
 
    this.purchaseval3 = value;
-   console.log("EXPORT VAL: " + this.purchaseval);
  }
  changePurchase4(value) {
 
    this.creditval = value;
-   console.log("EXPORT VAL: " + this.purchaseval);
  }
  changePurchase5(value) {
 
    this.creditnumval = value;
-   console.log("EXPORT VAL: " + this.purchaseval);
  }
  changePurchase6(value) {
 
     this.purchasenumval = value;
-   console.log("EXPORT VAL: " + this.purchaseval);
  }
  changeIncome(value) {
 
@@ -113,6 +105,8 @@ incomes:Income[] = [
    console.log("EXPORT VAL: " + this.incomeval);
  }
    onChange(){
+     console.log("Hello...");
+    super.setViewable(); 
     this.changeworthy = !this.changeworthy;
   }
 open(){

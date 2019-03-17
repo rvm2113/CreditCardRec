@@ -15,6 +15,7 @@ import { RecComponent } from './rec/rec.component';
 
 import { AppRoutingModule }     from './app-routing.module';
 import { SurveyComponent } from './survey/survey.component';
+import { TransactionComponent } from './transaction/transaction.component';
 
 
 
@@ -25,7 +26,8 @@ import { SurveyComponent } from './survey/survey.component';
     // CreditCardTypeComponent,
     SplashScreenComponent,
     RecComponent,
-    SurveyComponent
+    SurveyComponent,
+    TransactionComponent
   ],
   imports: [
  
