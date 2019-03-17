@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainInformationComponent } from './main-information/main-information.component';
 import { CreditCardTypeComponent } from './credit-card-type/credit-card-type.component';
@@ -14,12 +13,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { RecComponent } from './rec/rec.component';
 
+import { AppRoutingModule }     from './app-routing.module';
+import { SurveyComponent } from './survey/survey.component';
 
 
-const appRoutes: Routes = [
- 
-  { path: 'survey',      component: AppComponent },
-];
 
 @NgModule({
   declarations: [
@@ -28,6 +25,7 @@ const appRoutes: Routes = [
     CreditCardTypeComponent,
     SplashScreenComponent,
     RecComponent,
+    SurveyComponent
   ],
   imports: [
  
@@ -39,13 +37,7 @@ const appRoutes: Routes = [
     FormsModule,
     ReactiveFormsModule,
      MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule,
-     RouterModule.forRoot([
-      {path:'survey', component:AppComponent},
-       {path: 'splash', component: SplashScreenComponent},
-      {path: 'rec', component: RecComponent},
-      { path: '**', redirectTo: 'splash'}
-
-    ])
+    
 
   ],
   exports: [

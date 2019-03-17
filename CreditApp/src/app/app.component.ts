@@ -12,18 +12,18 @@ import { map } from 'rxjs/operators';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   template: `
+  
+
  
-  <div id="wrapper">
-  	<main-information> </main-information>
-  	<credit-card-type> </credit-card-type>
-  </div>
 
-
-  `
+<router-outlet></router-outlet>
+`
+ 
 })
 export class AppComponent {
   public title;
   public isViewable:boolean = false;
+  public oui:boolean = false;
  constructor(){
   this.title = 'CreditApp';
    this.isViewable = false;
