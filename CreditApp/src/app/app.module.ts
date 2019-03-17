@@ -10,16 +10,29 @@ import {MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatChe
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
+import { RouterModule, Routes } from '@angular/router';
+import { SplashComponentComponent } from './splash-component/splash-component.component';
+import { SplashScreenComponent } from './splash-screen/splash-screen.component';
+import { RecComponent } from './rec/rec.component';
 
 
+
+const appRoutes: Routes = [
+ 
+  { path: 'survey',      component: AppComponent },
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     MainInformationComponent,
     CreditCardTypeComponent,
+    SplashComponentComponent,
+    SplashScreenComponent,
+    RecComponent,
   ],
   imports: [
+ 
     BrowserModule,
     AppRoutingModule,
     FormsModule,
@@ -27,7 +40,14 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-     MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule
+     MatButtonModule, MatInputModule, MatListModule, MatToolbarModule, MatCheckboxModule, MatSelectModule,
+     RouterModule.forRoot([
+      {path:'survey', component:AppComponent},
+       {path: 'splash', component: SplashScreenComponent},
+      {path: 'rec', component: RecComponent},
+      { path: '**', redirectTo: 'splash'}
+
+    ])
 
   ],
   exports: [

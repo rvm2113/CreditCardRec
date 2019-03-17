@@ -8,6 +8,11 @@ export interface Purchase{
 	type: string
 }
 
+
+export interface Income{
+	type: string
+}
+
 @Component({
   selector: 'main-information',
   templateUrl: './main-information.component.html',
