@@ -57,8 +57,23 @@ incomes:Income[] = [
   }
   changePurchase(value) {
 
- 	this.purchaseval = value;
+ 	this.ageval = value;
  	console.log("EXPORT VAL: " + this.purchaseval);
+ }
+ changePurchase1(value) {
+
+   this.purchaseval1 = value;
+   console.log("EXPORT VAL: " + this.purchaseval);
+ }
+ changePurchase2(value) {
+
+   this.purchaseval2 = value;
+   console.log("EXPORT VAL: " + this.purchaseval);
+ }
+ changePurchase3(value) {
+
+   this.purchaseval3 = value;
+   console.log("EXPORT VAL: " + this.purchaseval);
  }
  changeIncome(value) {
 

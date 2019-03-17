@@ -17,7 +17,7 @@
 		</mat-form-field>
 		
 		<p class="question"> How many cards do you have?</p>
-		<mat-form-field class="container bracket-inputs">
+		<mat-form-field class="container bracket-inputs" (selectionChange) = "changePurchase2($event.value)">
 		      <input matInput
 		        type="number"
 		        placeholder="# of Credit Cards"
@@ -28,7 +28,7 @@
 		       <mat-error > Please Enter a value between 0 and 8</mat-error>
 		</mat-form-field>
 		<p class="question"> How many purchases do you make with your credit card in a week?</p>
-		<mat-form-field class="container bracket-inputs">
+		<mat-form-field class="container bracket-inputs"(selectionChange) = "changePurchase3($event.value)">
 		      <input matInput
 		        type="number"
 		        placeholder="# of Purchases"
@@ -44,5 +44,5 @@
 
 </div>
 <div id="btn">
-	<button mat-raised-button color ="accent">Submit</button>
+	<button mat-raised-button color ="accent" (click)="open()">Submit</button>
 </div>

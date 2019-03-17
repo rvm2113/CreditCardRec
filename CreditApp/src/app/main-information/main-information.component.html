@@ -4,7 +4,7 @@
   </mat-form-field>
 
 
-<mat-form-field class="container bracket-inputs">
+<mat-form-field class="container bracket-inputs" (selectionChange) = "changePurchase($event.value)">
       <input matInput
         type="number"
         placeholder="Age"
@@ -21,7 +21,7 @@
 </p>
 <mat-form-field class = "bracket-inputs container">
 
-  <mat-select  placeholder="Purchasing" (selectionChange) = "changePurchase($event.value)" >
+  <mat-select  placeholder="Purchasing" (selectionChange) = "changePurchase1($event.value)" >
     <mat-option *ngFor="let p of purchases" [value]="p.type">
       {{p.type}}
     </mat-option> 
@@ -29,7 +29,7 @@
 </mat-form-field>
 
 <mat-form-field class = "bracket-inputs container">
-  <mat-select  placeholder="Purchasing" (selectionChange) = "changePurchase($event.value)" >
+  <mat-select  placeholder="Purchasing" (selectionChange) = "changePurchase2($event.value)" >
     <mat-option *ngFor="let p of purchases" [value]="p.type">
       {{p.type}}
     </mat-option> 
@@ -38,7 +38,7 @@
 
 
 <mat-form-field class = "bracket-inputs container">
-  <mat-select  placeholder="Purchasing" (selectionChange) = "changePurchase($event.value)" >
+  <mat-select  placeholder="Purchasing" (selectionChange) = "changePurchase3($event.value)" >
     <mat-option *ngFor="let p of purchases" [value]="p.type">
       {{p.type}}
     </mat-option> 

@@ -37,9 +37,16 @@ purchaseval = "";
   ngOnInit() {
   }
 
+  
 
   changePurchase(value){
-  	this.purchaseval = value;
+  	this.creditval = value;
+  }	
+  changePurchase2(value){
+  	this.creditnumval = value;
+  }	
+  changePurchase3(value){
+  	this.purchasenumval = value;
   }	
 
 

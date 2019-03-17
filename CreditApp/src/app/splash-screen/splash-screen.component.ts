@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -9,7 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 })
 export class SplashScreenComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
